@@ -390,33 +390,36 @@ Complexe& Complexe::operator/=(Complexe const& e)
     }
     else if(complexe_type_contenu == rationnel)
     {
-        //Modifications***********************
-        Reel* temp1 = dynamic_cast<Reel*>(_reel);
-        Reel* temp2 = dynamic_cast<Reel*>(_img);
-        Reel* temp3 = dynamic_cast<Reel*>(e.getReel());
-        Reel* temp4 = dynamic_cast<Reel*>(e.getIm());
-        float i = temp1->getVal();
-
-        temp1->setVal(((i * temp3->getVal()) + (temp2->getVal() * temp4->getVal()))/(temp3->getVal()*temp3->getVal()+temp4->getVal()*temp4->getVal()));
-        temp2->setVal(((i * temp4->getVal()) - (temp3->getVal() * temp2->getVal()))/(temp3->getVal()*temp3->getVal()+temp4->getVal()*temp4->getVal()));
-
-
-        /*Rationnel* temp1 = dynamic_cast<Rationnel*>(_reel);
+        Rationnel* temp1 = dynamic_cast<Rationnel*>(_reel);
         Rationnel* temp2 = dynamic_cast<Rationnel*>(_img);
         Rationnel* temp3 = dynamic_cast<Rationnel*>(e.getReel());
         Rationnel* temp4 = dynamic_cast<Rationnel*>(e.getIm());
 
-        int i = temp1->getNum()->getVal();
-        int j = temp1->getNum()->getVal();
+        int a = temp1->getNum()->getVal();
+        int b = temp1->getDen()->getVal();
+        int c = temp2->getNum()->getVal();
+        int d = temp2->getDen()->getVal();
+        int e = temp3->getNum()->getVal();
+        int f = temp3->getDen()->getVal();
+        int g = temp4->getNum()->getVal();
+        int h = temp4->getDen()->getVal();
 
-        temp1->getNum()->setVal(((temp1->getNum()->getVal()*temp3->getNum()->getVal()*temp2->getDen()->getVal()*temp4->getDen()->getVal() + temp2->getNum()->getVal()*temp4->getNum()->getVal()*temp1->getDen()->getVal()*temp3->getDen()->getVal())));
-        temp1->getDen()->setVal((temp1->getDen()->getVal()*temp3->getDen()->getVal()*temp2->getDen()->getVal()*temp4->getDen()->getVal()));
+        int A=a*d*f*h;
+        int B=c*b*f*h;
+        int C=e*h*b*d;
+        int D=g*f*b*d;
+        temp1->getNum()->setVal(A*C+B*D);
+        temp1->getDen()->setVal(C*C+D*D);
+        temp2->getNum()->setVal(C*B-D*A);
+        temp2->getDen()->setVal(C*C+D*D);
+        /*temp1->getNum()->setVal(((i*temp3->getNum()->getVal()*temp2->getDen()->getVal()*temp4->getDen()->getVal() + temp2->getNum()->getVal()*temp4->getNum()->getVal()*temp1->getDen()->getVal()*temp3->getDen()->getVal())));
+        temp1->getDen()->setVal((j*temp3->getDen()->getVal()*temp2->getDen()->getVal()*temp4->getDen()->getVal()));
 
         temp2->getNum()->setVal(((i*temp2->getNum()->getVal()*temp2->getDen()->getVal()*temp3->getDen()->getVal() - temp2->getNum()->getVal()*temp3->getNum()->getVal()*j*temp4->getDen()->getVal())));
-        temp2->getDen()->setVal((temp1->getDen()->getVal()*temp3->getDen()->getVal()*temp2->getDen()->getVal()*temp4->getDen()->getVal()));
-
+        temp2->getDen()->setVal((j*temp3->getDen()->getVal()*temp2->getDen()->getVal()*temp4->getDen()->getVal()));
+        */
         temp1->simplifier();
-        temp2->simplifier();*/
+        temp2->simplifier();
     }
     else if(complexe_type_contenu == reel)
     {
