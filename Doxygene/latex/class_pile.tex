@@ -1,0 +1,195 @@
+\hypertarget{class_pile}{\section{Pile Class Reference}
+\label{class_pile}\index{Pile@{Pile}}
+}
+
+
+classe definissant la \hyperlink{class_pile}{Pile} de la calculatrice  
+
+
+
+
+{\ttfamily \#include $<$pile.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_pile_a87e36e40cb6e5a895713f72de779fa7a}{sommet\-Pile} ()
+\begin{DoxyCompactList}\small\item\em Sommet de la \hyperlink{class_pile}{Pile}. \end{DoxyCompactList}\item 
+\hypertarget{class_pile_a12ec9c8e7b677b3c13eed53b8d6d6079}{void \hyperlink{class_pile_a12ec9c8e7b677b3c13eed53b8d6d6079}{push\-Pile} (\hyperlink{class_constante}{Constante} $\ast$ptr)}\label{class_pile_a12ec9c8e7b677b3c13eed53b8d6d6079}
+
+\begin{DoxyCompactList}\small\item\em Empiler Ajoute une nouvelle constante à la pile. \end{DoxyCompactList}\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_pile_a1501ff8559ca01a3c95931da8130e3e3}{pop\-Pile} ()
+\begin{DoxyCompactList}\small\item\em Dépiler. \end{DoxyCompactList}\item 
+bool \hyperlink{class_pile_ae45e55f151180284728643cb9cfe4095}{is\-Empty} () const 
+\begin{DoxyCompactList}\small\item\em Test si la pile est vide. \end{DoxyCompactList}\item 
+int \hyperlink{class_pile_af1df97445ea801457aca2290e2a067f6}{get\-Size} () const 
+\begin{DoxyCompactList}\small\item\em Taille de la pile. \end{DoxyCompactList}\item 
+\hypertarget{class_pile_ac392dcf4afeb660726eb11a0433207e4}{void \hyperlink{class_pile_ac392dcf4afeb660726eb11a0433207e4}{drop\-Pile} ()}\label{class_pile_ac392dcf4afeb660726eb11a0433207e4}
+
+\begin{DoxyCompactList}\small\item\em Vider la pile Vide la pile. \end{DoxyCompactList}\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_pile_a39b2837b21016830fa12a682fc436fd9}{duplicate} ()
+\begin{DoxyCompactList}\small\item\em Dupliquer le premier element de la \hyperlink{class_pile}{Pile}. \end{DoxyCompactList}\item 
+void \hyperlink{class_pile_a24b987cd4cbd8c269c5cbdd21962d275}{swap} (int i, int j)
+\begin{DoxyCompactList}\small\item\em Echange deux valeurs de la pile Echange la place de deux valeurs sur la \hyperlink{class_pile}{Pile}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_pile_abf87a75425683a67664e7daae166dd62}{static \hyperlink{class_pile}{Pile} \& \hyperlink{class_pile_abf87a75425683a67664e7daae166dd62}{donne\-Instance} ()}\label{class_pile_abf87a75425683a67664e7daae166dd62}
+
+\begin{DoxyCompactList}\small\item\em Singleton Donne l'instance du Singleton. \end{DoxyCompactList}\item 
+\hypertarget{class_pile_ac1c6dc99e7b12586303e980b6c44e686}{static void \hyperlink{class_pile_ac1c6dc99e7b12586303e980b6c44e686}{libere\-Instance} ()}\label{class_pile_ac1c6dc99e7b12586303e980b6c44e686}
+
+\begin{DoxyCompactList}\small\item\em Singleton Libère l'instance du Singleton. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_pile_ab44e927107b28f5f3ac7697d10e0a739}{\hyperlink{class_pile_ab44e927107b28f5f3ac7697d10e0a739}{Pile} ()}\label{class_pile_ab44e927107b28f5f3ac7697d10e0a739}
+
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+\hyperlink{class_pile_a951f2c589b641463ab4e931465c185a6}{Pile} (const \hyperlink{class_pile}{Pile} \&)
+\begin{DoxyCompactList}\small\item\em Constructeur de recopie. \end{DoxyCompactList}\item 
+\hypertarget{class_pile_ab2d1398d675586ff34994e2b109df152}{\hyperlink{class_pile_ab2d1398d675586ff34994e2b109df152}{$\sim$\-Pile} ()}\label{class_pile_ab2d1398d675586ff34994e2b109df152}
+
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+\hypertarget{class_pile_a8d34708706c113ec9864f7c37c9083a2}{void \hyperlink{class_pile_a8d34708706c113ec9864f7c37c9083a2}{operator=} (const \hyperlink{class_pile}{Pile} \&)}\label{class_pile_a8d34708706c113ec9864f7c37c9083a2}
+
+\begin{DoxyCompactList}\small\item\em Surcharge de l'opérateur d'affectation =. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::stack$<$ \hyperlink{class_constante}{Constante} $\ast$ $>$ \hyperlink{class_pile_a1dd0efc34839396a40e844e06f3df535}{p}
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_pile}{Pile} $\ast$ \hyperlink{class_pile_aee2d789de47625aee2055c2b1e6ff570}{instance\-Unique} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+classe definissant la \hyperlink{class_pile}{Pile} de la calculatrice 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_pile_a951f2c589b641463ab4e931465c185a6}{\index{Pile@{Pile}!Pile@{Pile}}
+\index{Pile@{Pile}!Pile@{Pile}}
+\subsubsection[{Pile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pile\-::\-Pile} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Pile} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}\label{class_pile_a951f2c589b641463ab4e931465c185a6}
+
+
+Constructeur de recopie. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{class_pile}{Pile}} & \-: La pile à recopier \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pile_a39b2837b21016830fa12a682fc436fd9}{\index{Pile@{Pile}!duplicate@{duplicate}}
+\index{duplicate@{duplicate}!Pile@{Pile}}
+\subsubsection[{duplicate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante} $\ast$ {\bf Pile\-::duplicate} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pile_a39b2837b21016830fa12a682fc436fd9}
+
+
+Dupliquer le premier element de la \hyperlink{class_pile}{Pile}. 
+
+\begin{DoxyReturn}{Returns}
+Le premier élément de la \hyperlink{class_pile}{Pile} 
+\end{DoxyReturn}
+\hypertarget{class_pile_af1df97445ea801457aca2290e2a067f6}{\index{Pile@{Pile}!get\-Size@{get\-Size}}
+\index{get\-Size@{get\-Size}!Pile@{Pile}}
+\subsubsection[{get\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Pile\-::get\-Size} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_pile_af1df97445ea801457aca2290e2a067f6}
+
+
+Taille de la pile. 
+
+\begin{DoxyReturn}{Returns}
+Nombre d'éléments de la pile (int) 
+\end{DoxyReturn}
+\hypertarget{class_pile_ae45e55f151180284728643cb9cfe4095}{\index{Pile@{Pile}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!Pile@{Pile}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf Pile\-::is\-Empty} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_pile_ae45e55f151180284728643cb9cfe4095}
+
+
+Test si la pile est vide. 
+
+\begin{DoxyReturn}{Returns}
+booleen 
+\end{DoxyReturn}
+\hypertarget{class_pile_a1501ff8559ca01a3c95931da8130e3e3}{\index{Pile@{Pile}!pop\-Pile@{pop\-Pile}}
+\index{pop\-Pile@{pop\-Pile}!Pile@{Pile}}
+\subsubsection[{pop\-Pile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante} $\ast$ {\bf Pile\-::pop\-Pile} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pile_a1501ff8559ca01a3c95931da8130e3e3}
+
+
+Dépiler. 
+
+\begin{DoxyReturn}{Returns}
+Sommet de la pile (\hyperlink{class_constante}{Constante}) 
+\end{DoxyReturn}
+\hypertarget{class_pile_a87e36e40cb6e5a895713f72de779fa7a}{\index{Pile@{Pile}!sommet\-Pile@{sommet\-Pile}}
+\index{sommet\-Pile@{sommet\-Pile}!Pile@{Pile}}
+\subsubsection[{sommet\-Pile}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante} $\ast$ {\bf Pile\-::sommet\-Pile} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_pile_a87e36e40cb6e5a895713f72de779fa7a}
+
+
+Sommet de la \hyperlink{class_pile}{Pile}. 
+
+\begin{DoxyReturn}{Returns}
+Sommet de la pile (\hyperlink{class_constante}{Constante}) 
+\end{DoxyReturn}
+\hypertarget{class_pile_a24b987cd4cbd8c269c5cbdd21962d275}{\index{Pile@{Pile}!swap@{swap}}
+\index{swap@{swap}!Pile@{Pile}}
+\subsubsection[{swap}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf Pile\-::swap} (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_pile_a24b987cd4cbd8c269c5cbdd21962d275}
+
+
+Echange deux valeurs de la pile Echange la place de deux valeurs sur la \hyperlink{class_pile}{Pile}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \-: Place du premier élément (int) \\
+\hline
+{\em j} & \-: Place du deuxième élément à échanger avec le premier (int) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_pile_aee2d789de47625aee2055c2b1e6ff570}{\index{Pile@{Pile}!instance\-Unique@{instance\-Unique}}
+\index{instance\-Unique@{instance\-Unique}!Pile@{Pile}}
+\subsubsection[{instance\-Unique}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pile} $\ast$ {\bf Pile\-::instance\-Unique} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}static, private\mbox{]}}}}\label{class_pile_aee2d789de47625aee2055c2b1e6ff570}
+Singleton \hypertarget{class_pile_a1dd0efc34839396a40e844e06f3df535}{\index{Pile@{Pile}!p@{p}}
+\index{p@{p}!Pile@{Pile}}
+\subsubsection[{p}]{\setlength{\rightskip}{0pt plus 5cm}std\-::stack$<${\bf Constante}$\ast$$>$ {\bf Pile\-::p}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_pile_a1dd0efc34839396a40e844e06f3df535}
+\hyperlink{class_pile}{Pile} de \hyperlink{class_constante}{Constante} 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{pile_8h}{pile.\-h}\item 
+pile.\-cpp\end{DoxyCompactItemize}

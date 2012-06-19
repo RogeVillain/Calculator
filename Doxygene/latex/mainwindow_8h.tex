@@ -1,0 +1,78 @@
+\hypertarget{mainwindow_8h}{\section{mainwindow.\-h File Reference}
+\label{mainwindow_8h}\index{mainwindow.\-h@{mainwindow.\-h}}
+}
+
+
+Class \hyperlink{class_main_window}{Main\-Window}, gère la fenêtre principale.  
+
+
+{\ttfamily \#include $<$Q\-Main\-Window$>$}\\*
+{\ttfamily \#include $<$Q\-Settings$>$}\\*
+{\ttfamily \#include $<$Q\-Dialog$>$}\\*
+{\ttfamily \#include $<$Q\-Undo\-Stack$>$}\\*
+{\ttfamily \#include $<$Q\-Undo\-Command$>$}\\*
+{\ttfamily \#include $<$Qt\-Gui$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$cctype$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include \char`\"{}logsystem.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}factoryconst.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}pile.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}calculateur.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_main_window}{Main\-Window}
+\begin{DoxyCompactList}\small\item\em Classe pour l'affichage de la calculatrice. \end{DoxyCompactList}\item 
+class \hyperlink{class_add_texte}{Add\-Texte}
+\begin{DoxyCompactList}\small\item\em Classe pour l'ajout de texte. \end{DoxyCompactList}\item 
+class \hyperlink{class_del_texte}{Del\-Texte}
+\begin{DoxyCompactList}\small\item\em Classe pour la suppression de texte. \end{DoxyCompactList}\item 
+class \hyperlink{class_add_pile}{Add\-Pile}
+\begin{DoxyCompactList}\small\item\em Classe pour la gestion des ajouts sur la pile. \end{DoxyCompactList}\item 
+class \hyperlink{class_del_pile}{Del\-Pile}
+\begin{DoxyCompactList}\small\item\em Classe pour la gestion des suppressions sur la pile. \end{DoxyCompactList}\item 
+class \hyperlink{class_swap_pile}{Swap\-Pile}
+\begin{DoxyCompactList}\small\item\em Classe pour la gestion des echanges sur la pile. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{mainwindow_8h_a4af29c85a7ea1f830e17da94274f7a1a}{bool \hyperlink{mainwindow_8h_a4af29c85a7ea1f830e17da94274f7a1a}{is\-Entier} (const std\-::string \&s)}\label{mainwindow_8h_a4af29c85a7ea1f830e17da94274f7a1a}
+
+\begin{DoxyCompactList}\small\item\em permet de déterminer si le contenu de s est un entier \end{DoxyCompactList}\item 
+\hypertarget{mainwindow_8h_ac0848ae98acf97982c68e304c7443506}{bool \hyperlink{mainwindow_8h_ac0848ae98acf97982c68e304c7443506}{is\-Reel} (const std\-::string \&s)}\label{mainwindow_8h_ac0848ae98acf97982c68e304c7443506}
+
+\begin{DoxyCompactList}\small\item\em permet de déterminer si le contenu de s est un reel \end{DoxyCompactList}\item 
+\hypertarget{mainwindow_8h_a6ef53826fb44086bc556a1dd9ea5a84d}{bool \hyperlink{mainwindow_8h_a6ef53826fb44086bc556a1dd9ea5a84d}{is\-Rationnel} (const std\-::string \&s)}\label{mainwindow_8h_a6ef53826fb44086bc556a1dd9ea5a84d}
+
+\begin{DoxyCompactList}\small\item\em permet de déterminer si le contenu de s est un rationnel \end{DoxyCompactList}\item 
+\hypertarget{mainwindow_8h_a30fbb03abb4380e117186c4d7ce885fe}{bool \hyperlink{mainwindow_8h_a30fbb03abb4380e117186c4d7ce885fe}{is\-Complexe} (const std\-::string \&s)}\label{mainwindow_8h_a30fbb03abb4380e117186c4d7ce885fe}
+
+\begin{DoxyCompactList}\small\item\em permet de déterminer si le contenu de s est un complexe \end{DoxyCompactList}\item 
+\hypertarget{mainwindow_8h_a7f76347df4e941ac41c79d0e8c88320f}{bool \hyperlink{mainwindow_8h_a7f76347df4e941ac41c79d0e8c88320f}{is\-Expression} (const std\-::string \&s)}\label{mainwindow_8h_a7f76347df4e941ac41c79d0e8c88320f}
+
+\begin{DoxyCompactList}\small\item\em permet de déterminer si le contenu de s est une expression \end{DoxyCompactList}\item 
+\hypertarget{mainwindow_8h_a7c905110dfbebd73903ea4905ba18285}{bool \hyperlink{mainwindow_8h_a7c905110dfbebd73903ea4905ba18285}{operateur\-\_\-binaire} (const std\-::string \&s)}\label{mainwindow_8h_a7c905110dfbebd73903ea4905ba18285}
+
+\begin{DoxyCompactList}\small\item\em permet de déterminer si le contenu de s est un opérateur binaire (+,-\/,$\ast$ ...) \end{DoxyCompactList}\item 
+\hypertarget{mainwindow_8h_a867b7f52759b6a14730135634d411e6f}{bool \hyperlink{mainwindow_8h_a867b7f52759b6a14730135634d411e6f}{operateur\-\_\-unaire} (const std\-::string \&s)}\label{mainwindow_8h_a867b7f52759b6a14730135634d411e6f}
+
+\begin{DoxyCompactList}\small\item\em permet de déterminer si le contenu de s est un opérateur unaire binaire (+,-\/,$\ast$ ...)(ex \-: cos, sin ...) \end{DoxyCompactList}\item 
+\hypertarget{mainwindow_8h_a392f116d918744b4e2e63535f0f9a634}{bool \hyperlink{mainwindow_8h_a392f116d918744b4e2e63535f0f9a634}{est\-Present\-Char} (const char \&c, const Q\-String \&s)}\label{mainwindow_8h_a392f116d918744b4e2e63535f0f9a634}
+
+\begin{DoxyCompactList}\small\item\em permet de déterminer si un caractère est présent dans s \end{DoxyCompactList}\item 
+\hypertarget{mainwindow_8h_a7e63c1722b76e18655cb4025b2ec3cc9}{bool \hyperlink{mainwindow_8h_a7e63c1722b76e18655cb4025b2ec3cc9}{est\-Vide} (const Q\-String \&s)}\label{mainwindow_8h_a7e63c1722b76e18655cb4025b2ec3cc9}
+
+\begin{DoxyCompactList}\small\item\em permet de déterminer si s est vide \end{DoxyCompactList}\item 
+\hypertarget{mainwindow_8h_a9738aa32a07b4584222694e70e023af5}{int \hyperlink{mainwindow_8h_a9738aa32a07b4584222694e70e023af5}{nb\-Occurences} (const char \&c, const Q\-String \&s)}\label{mainwindow_8h_a9738aa32a07b4584222694e70e023af5}
+
+\begin{DoxyCompactList}\small\item\em permet de connaitre le nombre d'occurence de c dans s \end{DoxyCompactList}\item 
+\hypertarget{mainwindow_8h_a1c0c628559142d2d6dfc11b6b738847a}{\hyperlink{constante_8h_a1d1cfd8ffb84e947f82999c682b666a7}{Type} \hyperlink{mainwindow_8h_a1c0c628559142d2d6dfc11b6b738847a}{type\-Texte} (const Q\-String \&s)}\label{mainwindow_8h_a1c0c628559142d2d6dfc11b6b738847a}
+
+\begin{DoxyCompactList}\small\item\em permet de connaitre le type de \hyperlink{class_constante}{Constante} contenue dans le Q\-String \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{class_main_window}{Main\-Window}, gère la fenêtre principale. \begin{DoxyAuthor}{Author}
+Frederic Roge, Paul Villain 
+\end{DoxyAuthor}

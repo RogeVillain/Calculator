@@ -1,0 +1,89 @@
+\hypertarget{class_del_pile}{\section{Del\-Pile Class Reference}
+\label{class_del_pile}\index{Del\-Pile@{Del\-Pile}}
+}
+
+
+Classe pour la gestion des suppressions sur la pile.  
+
+
+
+
+{\ttfamily \#include $<$mainwindow.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_del_pile_a1fa3655064972bf31a88fd7cfa7c4b13}{\hyperlink{class_del_pile_a1fa3655064972bf31a88fd7cfa7c4b13}{Del\-Pile} (int i, Q\-Undo\-Command $\ast$parent=0)}\label{class_del_pile_a1fa3655064972bf31a88fd7cfa7c4b13}
+
+\begin{DoxyCompactList}\small\item\em Constructeur de \hyperlink{class_del_pile}{Del\-Pile}. \end{DoxyCompactList}\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_del_pile_aeedf15cdfe55a1251597c80108d32cf1}{get\-A} ()
+\begin{DoxyCompactList}\small\item\em Accesseur. \end{DoxyCompactList}\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_del_pile_ac57348b846881fd694ac43e1eefcdf38}{get\-B} ()
+\begin{DoxyCompactList}\small\item\em Accesseur. \end{DoxyCompactList}\item 
+\hypertarget{class_del_pile_a6eae5bd694d152a265e8acd3222632d9}{void \hyperlink{class_del_pile_a6eae5bd694d152a265e8acd3222632d9}{undo} ()}\label{class_del_pile_a6eae5bd694d152a265e8acd3222632d9}
+
+\begin{DoxyCompactList}\small\item\em Empiler action inverse de la fonction \hyperlink{class_del_pile}{Del\-Pile}. \end{DoxyCompactList}\item 
+\hypertarget{class_del_pile_a0af9499da3e8f72aacbb65f23b1c9b85}{void \hyperlink{class_del_pile_a0af9499da3e8f72aacbb65f23b1c9b85}{redo} ()}\label{class_del_pile_a0af9499da3e8f72aacbb65f23b1c9b85}
+
+\begin{DoxyCompactList}\small\item\em Dépiler action identique à la fonction \hyperlink{class_del_pile}{Del\-Pile}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_del_pile_a41c78904b2fdb15b5eb65675bfd7ed8a}{nb\-Const}
+\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_del_pile_abe7b2a46d1dc735e48721b461e51f537}{a}
+\item 
+\hyperlink{class_constante}{Constante} $\ast$ \hyperlink{class_del_pile_a7e87934f03f82947927f1417bc37ce0c}{b}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Classe pour la gestion des suppressions sur la pile. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_del_pile_aeedf15cdfe55a1251597c80108d32cf1}{\index{Del\-Pile@{Del\-Pile}!get\-A@{get\-A}}
+\index{get\-A@{get\-A}!DelPile@{Del\-Pile}}
+\subsubsection[{get\-A}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante}$\ast$ {\bf Del\-Pile\-::get\-A} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_del_pile_aeedf15cdfe55a1251597c80108d32cf1}
+
+
+Accesseur. 
+
+\begin{DoxyReturn}{Returns}
+Première constante dépilée 
+\end{DoxyReturn}
+\hypertarget{class_del_pile_ac57348b846881fd694ac43e1eefcdf38}{\index{Del\-Pile@{Del\-Pile}!get\-B@{get\-B}}
+\index{get\-B@{get\-B}!DelPile@{Del\-Pile}}
+\subsubsection[{get\-B}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante}$\ast$ {\bf Del\-Pile\-::get\-B} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_del_pile_ac57348b846881fd694ac43e1eefcdf38}
+
+
+Accesseur. 
+
+\begin{DoxyReturn}{Returns}
+Deuxième constante dépilée 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_del_pile_abe7b2a46d1dc735e48721b461e51f537}{\index{Del\-Pile@{Del\-Pile}!a@{a}}
+\index{a@{a}!DelPile@{Del\-Pile}}
+\subsubsection[{a}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante}$\ast$ {\bf Del\-Pile\-::a}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_del_pile_abe7b2a46d1dc735e48721b461e51f537}
+constante que l'on a supprimé de la pile \hypertarget{class_del_pile_a7e87934f03f82947927f1417bc37ce0c}{\index{Del\-Pile@{Del\-Pile}!b@{b}}
+\index{b@{b}!DelPile@{Del\-Pile}}
+\subsubsection[{b}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Constante}$\ast$ {\bf Del\-Pile\-::b}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_del_pile_a7e87934f03f82947927f1417bc37ce0c}
+constante que l'on a supprimé de la pile \hypertarget{class_del_pile_a41c78904b2fdb15b5eb65675bfd7ed8a}{\index{Del\-Pile@{Del\-Pile}!nb\-Const@{nb\-Const}}
+\index{nb\-Const@{nb\-Const}!DelPile@{Del\-Pile}}
+\subsubsection[{nb\-Const}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf Del\-Pile\-::nb\-Const}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_del_pile_a41c78904b2fdb15b5eb65675bfd7ed8a}
+nombre de constantes dépilées 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mainwindow_8h}{mainwindow.\-h}\item 
+mainwindow.\-cpp\end{DoxyCompactItemize}
